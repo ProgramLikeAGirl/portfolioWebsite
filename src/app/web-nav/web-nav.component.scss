@@ -1,0 +1,31 @@
+.mat-toolbar {
+  background-color: #57CC99;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000; 
+}
+
+.title {
+  margin-right: 20px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+a {
+  margin: 0px 7px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover, fa-icon:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+fa-icon {
+  font-size: 35px;
+  margin: 0px 5px;
+}

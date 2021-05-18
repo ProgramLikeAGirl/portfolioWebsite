@@ -1,17 +1,15 @@
 .main-container {
     text-align: center;
     margin: auto;
-    width: 100vh;
+    font-size: 14px;
 }
 
 .intro {
     background-color: #C7F9CC;
-    padding: 10px 30px 50px 50px;
     display: flex;
     flex-direction: row;
     .intro-text {
         font-size: 3.2em;
-        margin: 0px;
         text-align: center;
         font-family: Garamond, Arial, Helvetica, sans-serif;
     }
@@ -19,7 +17,6 @@
     .blurb {
         font-size: 0.4em;
         margin: auto;
-        width: 60%;
     }
 
     .flex-grow {

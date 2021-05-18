@@ -1,33 +1,47 @@
-.intro {
-    height: 100vh;
-    width: 100vh;
-    background-color: #57CC99;
+.main-container {
+    text-align: center;
     margin: auto;
-    padding: 50px;
+    width: 100vh;
+}
 
+.intro {
+    background-color: #C7F9CC;
+    padding: 10px 30px 50px 50px;
+    display: flex;
+    flex-direction: row;
     .intro-text {
-        font-size: 3em;
-        margin: 0px 40px 80px 40px;
+        font-size: 3.2em;
+        margin: 0px;
         text-align: center;
         font-family: Garamond, Arial, Helvetica, sans-serif;
     }
+
+    .blurb {
+        font-size: 0.4em;
+        margin: auto;
+        width: 60%;
+    }
+
+    .flex-grow {
+        flex-grow: 3;
+    }
     
     .headshot {
-        height: 14em;
+        height: 250px;
         border-radius: 50%;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+        flex-grow: 1;
+        border: 4px solid grey;
     }
 }
 
 .skills {
-    height: 100vh;
-    width: 100vh;
     margin: 0px 3em;
     h1 {
         text-align: center;
         font-size: 3em;
+        text-decoration: underline grey;
     }
     li {
         display: inline;
@@ -40,4 +54,8 @@
     li img {
         height: 2.5em;
     }
+}
+
+.portfolio {
+    background-color: #38A3A5;
 }

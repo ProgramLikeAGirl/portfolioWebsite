@@ -1,14 +1,22 @@
-<div>
+<div class="main-container">
   <app-web-nav></app-web-nav>
-  <div class="intro" id="intro">
-      
-    <div class="intro-text">
-      <p>Hello! My name is MacKayla.</p>
-      <p>I'm a web developer in Utah.</p>
-    </div>
+  <mat-card class="intro" id="intro">
     <img class="headshot" src="../../assets/DSC09267 (2).JPG" alt="Headshot" />
-  </div>
-  <div class="skills" id="skills">
+    <div class="flex-grow">
+        <div class="intro-text">
+            <p>Hello! My name is MacKayla.</p>
+            <p>I'm a Web Developer in Utah.</p>
+            <p class="blurb">
+              I'm currently working two externships. One as a Project Manager and one
+              as a Full Stack Intern. Once I finish my 240 externship hours, I will
+              graduate from MTECH. I plan to attend UVU in the fall to work towards a
+              Computer Science degree.
+            </p>
+          </div>
+    </div>
+
+  </mat-card>
+  <mat-card class="skills" id="skills">
     <h1>SKILLS</h1>
     <ul>
       <li><img src="../../assets/html.png" alt="HTML Logo" /></li>
@@ -50,13 +58,13 @@
         />
       </li>
     </ul>
-  </div>
-  <div class="portfolio" id="portfolio">
+  </mat-card>
+  <mat-card class="portfolio" id="portfolio">
     Portfolio
     <p>Projects</p>
     <button>Lesser Pokémon Pokédex</button>
     <button>Group Project: Trivia Extraordinaire</button>
     <button>Angular Firebase Golf Scorecard</button>
-  </div>
+  </mat-card>
   <div class="contact" id="contact">Contact</div>
 </div>

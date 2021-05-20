@@ -5,28 +5,16 @@
   top: 0;
   z-index: 1000; 
   width: 100%;
+  justify-content: space-evenly;
 }
-
-.title {
-  margin-right: 20px;
-}
-
-.example-spacer {
-    flex: 1 1 auto;
-  }
 
 a {
-  margin: 0px 7px;
+  font-size: 1.3em;
   text-decoration: none;
   color: black;
 }
 
-a:hover, fa-icon:hover {
+a:hover {
   color: grey;
   cursor: pointer;
-}
-
-fa-icon {
-  font-size: 35px;
-  margin: 0px 5px;
 }

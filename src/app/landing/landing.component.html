@@ -87,11 +87,75 @@
     </ul>
   </mat-card>
   <mat-card class="portfolio" id="portfolio">
-    Portfolio
-    <p>Projects</p>
-    <button>Lesser Pokémon Pokédex</button>
-    <button>Group Project: Trivia Extraordinaire</button>
-    <button>Angular Firebase Golf Scorecard</button>
+    <h1>PROJECTS</h1>
+    <div class="flex-projects">
+      <mat-card class="flex-size">
+        <mat-card-content class="project-title">
+          <a href="https://github.com/MacWhitehead/pokemon-api" target="_blank"
+            >Lesser Pokémon Pokédex</a
+          >
+        </mat-card-content>
+        <mat-card-footer
+          >This was an exercise to learn code modules in Javascript, as well as
+          accessing API data.</mat-card-footer
+        >
+      </mat-card>
+      <mat-card class="flex-size">
+        <mat-card-content class="project-title">
+          <a
+            href="https://macwhitehead.github.io/NgGroupProject-Trivia/"
+            target="_blank"
+            >Group Project: Trivia Extraordinaire</a
+          >
+        </mat-card-content>
+        <mat-card-footer
+          >This was a group project to cement Angular learning. I created the
+          nav bar, create game page, user details page, and did 70% of the
+          overall styling on the app.
+        </mat-card-footer>
+      </mat-card>
+      <mat-card class="flex-size">
+        <mat-card-content class="project-title">
+          <a
+            href="https://github.com/MacWhitehead/angular-firebase-golf-app"
+            target="_blank"
+            >Angular Firebase Golf Scorecard</a
+          >
+        </mat-card-content>
+        <mat-card-footer
+          >The goal of this project was to take our original JavaScript version
+          of a Golf Scorecard and turn it into an Angular app.</mat-card-footer
+        >
+      </mat-card>
+
+      <mat-card class="flex-size">
+        <mat-card-content class="project-title">
+          <a
+            href="https://github.com/MacWhitehead/Golf-Scorecard"
+            target="_blank"
+            >JavaScript Golf Scorecard</a
+          >
+        </mat-card-content>
+        <mat-card-footer
+          >This was the original vanilla JavaScript Golf Scorecard. Although I
+          have gotten better at JavaScript, I think it's a good example of how
+          far I've come in my learning.</mat-card-footer
+        >
+      </mat-card>
+    </div>
   </mat-card>
-  <div class="contact" id="contact">Contact</div>
+  <mat-card class="contact" id="contact">
+    <h1>CONTACT ME</h1>
+    <a href="https://www.linkedin.com/in/mackayla-whitehead/" target="_blank"
+    ><fa-icon [icon]="faLinkedin"></fa-icon
+  ></a>
+  <a href="https://github.com/MacWhitehead" target="_blank"
+    ><fa-icon [icon]="faGithubAlt"></fa-icon
+  ></a>
+  <div>
+    <h2>Email:</h2>
+    <p>programlikeagirl@gmail.com</p>
+  </div>
+
+  </mat-card>
 </div>

@@ -1,3 +1,6 @@
+// // 610 max
+// //340 min
+
 .main-container {
     text-align: center;
     margin: auto;
@@ -6,8 +9,7 @@
 
 .intro {
     background-color: #C7F9CC;
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     .intro-text {
         font-size: 3.2em;
         text-align: center;
@@ -17,10 +19,6 @@
     .blurb {
         font-size: 0.4em;
         margin: auto;
-    }
-
-    .flex-grow {
-        flex-grow: 3;
     }
     
     .headshot {
@@ -34,7 +32,6 @@
 }
 
 .skills {
-    margin: 0px 3em;
     h1 {
         text-align: center;
         font-size: 3em;
@@ -42,7 +39,6 @@
     }
     li {
         display: inline;
-        margin: 0px 15px;
         text-align: center;
         font-size: 3.1em;
         text-align: center;
@@ -60,14 +56,6 @@
         text-align: center;
         font-size: 3em;
         text-decoration: underline grey;
-    }
-    .flex-projects {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .flex-size {
-        flex: 1;
     }
 
     .project-title {
@@ -120,4 +108,48 @@
       p {
         font-size: 1.5em;
       }
+}
+
+
+
+@media only screen and (max-width: 803px) {
+    .flex-projects {
+        display: block;
+    }
+
+    .intro {
+        display: block;
+    }
+
+    .skills {
+        margin: 0px;
+        li img  {
+            height: 2.5em;
+        }
+        li {
+            margin: 0px;
+        }
+    }
+  }
+
+
+@media only screen and (min-width: 803px) {
+    .flex-projects {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills {
+        margin: 0px 3em;
+        li img  {
+            height: 2.5em;
+        }
+        li {
+            margin: 0px 15px;
+        }
+    }
 }

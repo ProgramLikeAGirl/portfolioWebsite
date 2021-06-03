@@ -1,19 +1,20 @@
 <div class="main-container">
   <app-web-nav></app-web-nav>
   <mat-card class="intro" id="intro">
-    <img class="headshot" src="../../assets/DSC09267 (2).JPG" alt="Headshot" />
-    <div class="flex-grow">
-      <div class="intro-text">
-        <p>Hello! My name is MacKayla.</p>
-        <p>I'm a Web Developer in Utah.</p>
-        <p class="blurb">
-          I'm currently working two externships. One as a Project Manager and
-          one as a Full Stack Intern. Once I finish my 240 externship hours, I
-          will graduate from MTECH. I plan to attend UVU in the fall to work
-          towards a Computer Science degree.
-        </p>
-      </div>
+    <div class="intro-text">
+      <p class="bolder">Hello! My name is MacKayla.</p>
+      <p class="subtitle">I'm a Web Developer in Utah.</p>
+
+      <p class="blurb" >
+        I'm a lifelong learner and have always loved hands on projects. Web
+        Development checks all the boxes for me. There's always something to
+        learn, do, and create. I've always joked that I'd be good at
+        programming, but decided to take the plunge in 2019. Over a year of hard
+        work in school later and my passion for the industry has only grown. I
+        can't wait to see what I can build as my skills improve!
+      </p>
     </div>
+    <img class="headshot" src="../../assets/DSC09267 (2).JPG" alt="Headshot" />
   </mat-card>
   <mat-card class="skills" id="skills">
     <h1>SKILLS</h1>
@@ -27,44 +28,11 @@
       <li matTooltip="CSS">
         <img src="../../assets/css.png" alt="CSS Logo" />
       </li>
-      <li matTooltip="Sass">
-        <img src="../../assets/sass.png" alt="SASS Logo" />
-      </li>
-      <li matTooltip="Bootstrap">
-        <img src="../../assets/bootstrap.png" alt="Bootstrap Logo" />
-      </li>
-      <li matTooltip="Pug">
-        <img src="../../assets/pug.Default" alt="Pug Logo" />
-      </li>
       <li matTooltip="Angular">
         <img src="../../assets/angular.png" alt="Angular Logo" />
       </li>
       <li matTooltip="Angular Material">
         <img src="../../assets/material.png" alt="Material Logo" />
-      </li>
-      <li matTooltip="Ionic">
-        <img src="../../assets/ionic.png" alt="Ionic Logo" />
-      </li>
-      <li matTooltip="React">
-        <img src="../../assets/react.png" alt="React Logo" />
-      </li>
-      <li matTooltip="Redux">
-        <img src="../../assets/redux.png" alt="Redux Logo" />
-      </li>
-      <li matTooltip="Node & Node JS">
-        <img src="../../assets/node.png" alt="Node Logo" />
-      </li>
-      <li matTooltip="SQL">
-        <img src="../../assets/sql.png" alt="SQL Database" />
-      </li>
-      <li matTooltip="Postgres">
-        <img src="../../assets/postgres.png" alt="Postgres Icon" />
-      </li>
-      <li matTooltip="Firebase">
-        <img src="../../assets/firebase.png" alt="Firebase Icon" />
-      </li>
-      <li matTooltip="Karma">
-        <img src="../../assets/karma.png" alt="Karma Icon" />
       </li>
       <li matTooltip="AWS Cloud Practitioner Graduate">
         <img
@@ -72,79 +40,125 @@
           alt="AWS Graduate Badge"
         />
       </li>
-      <li matTooltip="MongoDB">
-        <img
-          src="../../assets/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png"
-          alt="MongoDB Icon"
-          class="full-size"
-        />
+      <li matTooltip="Node & Node JS">
+        <img src="../../assets/node.png" alt="Node Logo" />
       </li>
-      <li matTooltip="Jasmine">
-        <img
-          class="full-size"
-          src="../../assets/jasmine-purple-horizontal.svg"
-          alt="Jasmine Icon"
-        />
+      <li matTooltip="SQL">
+        <img src="../../assets/sql.png" alt="SQL Database" />
       </li>
+
+      <div *ngIf="showSection">
+        <li matTooltip="Sass">
+          <img src="../../assets/sass.png" alt="SASS Logo" />
+        </li>
+        <li matTooltip="Bootstrap">
+          <img src="../../assets/bootstrap.png" alt="Bootstrap Logo" />
+        </li>
+        <li matTooltip="Pug">
+          <img src="../../assets/pug.Default" alt="Pug Logo" />
+        </li>
+        <li matTooltip="Ionic">
+          <img src="../../assets/ionic.png" alt="Ionic Logo" />
+        </li>
+        <li matTooltip="React">
+          <img src="../../assets/react.png" alt="React Logo" />
+        </li>
+        <li matTooltip="Redux">
+          <img src="../../assets/redux.png" alt="Redux Logo" />
+        </li>
+        <li matTooltip="Postgres">
+          <img src="../../assets/postgres.png" alt="Postgres Icon" />
+        </li>
+        <li matTooltip="Firebase">
+          <img src="../../assets/firebase.png" alt="Firebase Icon" />
+        </li>
+        <li matTooltip="Karma">
+          <img src="../../assets/karma.png" alt="Karma Icon" />
+        </li>
+        <li matTooltip="MongoDB">
+          <img
+            src="../../assets/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png"
+            alt="MongoDB Icon"
+            class="full-size"
+          />
+        </li>
+        <li matTooltip="Jasmine">
+          <img
+            class="full-size"
+            src="../../assets/jasmine-purple-horizontal.svg"
+            alt="Jasmine Icon"
+          />
+        </li>
+      </div>
+      <button
+        (click)="toggleMore()"
+        id="toggleSkills"
+        aria-label="Show More Skills"
+      >
+        Show More
+      </button>
     </ul>
   </mat-card>
   <mat-card class="portfolio" id="portfolio">
     <h1>PROJECTS</h1>
     <div class="flex-projects">
       <mat-card class="flex-size">
-        <mat-card-content class="project-title">
+        <mat-card-title class="project-title">
           <a href="https://github.com/MacWhitehead/pokemon-api" target="_blank"
             >Lesser Pokémon Pokédex</a
           >
-        </mat-card-content>
-        <mat-card-footer
+        </mat-card-title>
+        <mat-card-content
           >This was an exercise to learn code modules in Javascript, as well as
-          accessing API data.</mat-card-footer
+          accessing API data.</mat-card-content
         >
       </mat-card>
       <mat-card class="flex-size">
-        <mat-card-content class="project-title">
+        <mat-card-title class="project-title">
           <a
             href="https://macwhitehead.github.io/NgGroupProject-Trivia/"
             target="_blank"
             >Group Project: Trivia Extraordinaire</a
           >
-        </mat-card-content>
-        <mat-card-footer
+        </mat-card-title>
+        <mat-card-content
           >This was a group project to cement Angular learning. I created the
           nav bar, create game page, user details page, and did 70% of the
           overall styling on the app.
-        </mat-card-footer>
+        </mat-card-content>
       </mat-card>
       <mat-card class="flex-size">
-        <mat-card-content class="project-title">
+        <mat-card-title class="project-title">
           <a
             href="https://github.com/MacWhitehead/angular-firebase-golf-app"
             target="_blank"
             >Angular Firebase Golf Scorecard</a
           >
-        </mat-card-content>
-        <mat-card-footer
+        </mat-card-title>
+        <mat-card-content
           >The goal of this project was to take our original JavaScript version
-          of a Golf Scorecard and turn it into an Angular app.</mat-card-footer
+          of a Golf Scorecard and turn it into an Angular app.</mat-card-content
         >
       </mat-card>
 
       <mat-card class="flex-size">
-        <mat-card-content class="project-title">
+        <mat-card-title class="project-title">
           <a
             href="https://github.com/MacWhitehead/Golf-Scorecard"
             target="_blank"
             >JavaScript Golf Scorecard</a
           >
-        </mat-card-content>
-        <mat-card-footer
+        </mat-card-title>
+        <mat-card-content
           >This was the original vanilla JavaScript Golf Scorecard. Although I
           have gotten better at JavaScript, I think it's a good example of how
-          far I've come in my learning.</mat-card-footer
+          far I've come in my learning.</mat-card-content
         >
       </mat-card>
     </div>
+    <mat-card class="resume">
+      <a href="../../assets/MacKaylaResume.pdf" target="_blank">View Resume</a>
+    </mat-card>
   </mat-card>
   <mat-card class="contact" id="contact">
     <h1>CONTACT ME</h1>

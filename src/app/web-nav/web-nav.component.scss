@@ -1,23 +1,23 @@
 .mat-toolbar {
-  background-color: #57CC99;
+  background-color: #34a0a4;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 1000; 
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: end;
   border-bottom: solid 1px grey;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+  margin: 0px 20px;
 }
 
 a:hover {
-  color: grey;
+  color: #d6d2d2;
   cursor: pointer;
-  text-decoration: underline grey;
 }
 
 //mobile

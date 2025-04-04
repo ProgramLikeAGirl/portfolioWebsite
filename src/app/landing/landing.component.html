@@ -1,140 +1,125 @@
 <div class="main-container">
-  <!-- <app-web-nav></app-web-nav> -->
-  <div class="intro" id="intro">
-    <div class="intro-text-container">
-      <div class="column-one">
-        <p class="name">Hello! My name is MacKayla.</p>
-        <p class="subtitle">I'm a Software Engineer.</p>
-        
-        <p class="blurb" >
-          I'm a lifelong learner and have always loved hands on projects. Web
-          Development checks all the boxes for me. There's always something to
-          learn, do, and create. I'm currently attending UVU and working towards 
-          a BAS in Software Development. 
-        </p>
-      </div>
-      <div class="column-2"></div>
-      </div>
-  </div>
-  <div class="skills" id="skills">
-    <h1>SKILLS</h1>
-    <ul>
-      <li matTooltip="HTML">
-        <img src="../../assets/html.png" alt="HTML Logo" />
-      </li>
-      <li matTooltip="JavaScript">
-        <img src="../../assets/js.jpg" alt="JavaScript Logo" />
-      </li>
-      <li matTooltip="CSS">
-        <img src="../../assets/css.png" alt="CSS Logo" />
-      </li>
-      <li matTooltip="Angular">
-        <img src="../../assets/angular.png" alt="Angular Logo" />
-      </li>
-      <li matTooltip="React">
-        <img src="../../assets/react.png" alt="React Logo" />
-      </li>
-      <li matTooltip="AWS Cloud Practitioner Graduate">
-        <img
-          src="../../assets/aws-academy-graduate-aws-academy-cloud-foundations (2).png"
-          alt="AWS Graduate Badge"
-        />
-      </li>
-      <li matTooltip="SQL">
-        <img src="../../assets/sql.png" alt="SQL Database" />
-      </li>
-
-      <div *ngIf="showSection">
-        <li matTooltip="Sass">
-          <img src="../../assets/sass.png" alt="SASS Logo" />
-        </li>
-        <li matTooltip="Bootstrap">
-          <img src="../../assets/bootstrap.png" alt="Bootstrap Logo" />
-        </li>
-        <li matTooltip="Angular Material">
-          <img src="../../assets/material.png" alt="Material Logo" />
-        </li>
-        <li matTooltip="Redux">
-          <img src="../../assets/redux.png" alt="Redux Logo" />
-        </li>
-        <li matTooltip="Postgres">
-          <img src="../../assets/postgres.png" alt="Postgres Icon" />
-        </li>
-        <li matTooltip="Firebase">
-          <img src="../../assets/firebase.png" alt="Firebase Icon" />
-        </li>
-      </div>
-      <button
-        (click)="toggleMore()"
-        id="toggleSkills"
-        aria-label="Show More Skills"
-      >
-        Show More
-      </button>
-    </ul>
-  </div>
-  <!-- <div class="project-section">
-    <h1>PROJECTS</h1>
-    <div class="portfolio" id="portfolio">
-      <mat-card class="project">
-        <mat-card-header>
-          <a href="https://github.com/MacWhitehead/pokemon-api" target="_blank"
-          >Pokémon Pokédex</a>
-        </mat-card-header>
-        <img mat-card-image src="../../assets/pokedex.PNG" alt="">
-        <mat-card-content>
-          <p>
-            This project is a quick Pokédex that allows you to search for a 
-            Pokémon by name or generate a random Pokémon. It was an introduction 
-            to how Angular and React work and utilized vanilla JavaScript, HTML, and 
-            code modules. 
-          </p> 
-        </mat-card-content>
-        </mat-card>
-
-      <mat-card class="project">
-        <mat-card-header>
-          <a
-          href="https://macwhitehead.github.io/NgGroupProject-Trivia/"
-          target="_blank"
-          >Group Project: Trivia Extraordinaire</a>
-        </mat-card-header>
-        <img mat-card-image src="../../assets/trivia.PNG" alt="">
-        <mat-card-content>
-          <p>This was a group project to cement Angular learning. I was assigned 
-            the project manager role and created the sprint tasks, Trello boards, 
-            and wire frame. I also programmed the user details page, navigation bar, 
-            router guards, and create game page. I also styled 70% of the application.</p>
-        </mat-card-content>
-      </mat-card>
-
-      <mat-card class="project">
-        <mat-card-header>
-          <a
-          href="https://github.com/MacWhitehead/angular-firebase-golf-app"
-          target="_blank"
-          >Angular Firebase Golf Scorecard</a>
-        </mat-card-header>
-        <img mat-card-image src="../../assets/golf.PNG" alt="">
-        <mat-card-content>
-          <p>For this project, I was tasked with taking a vanilla JavaScript app
-            and changing it into an Angular application.</p>
-          </mat-card-content>
-      </mat-card>
-  </div>
-  </div>
+    <div class="intro" id="intro">
+      <p class="name">Hello! My name is MacKayla Curtis.</p>
+      <p class="subtitle">I'm a Software Engineer.</p>
       
-  <mat-card class="contact" id="contact">
-    <h1>CONTACT ME</h1>
-    <a href="https://www.linkedin.com/in/mackayla-whitehead/" target="_blank"
-      ><fa-icon [icon]="faLinkedin"></fa-icon
-    ></a>
-    <a href="https://github.com/MacWhitehead" target="_blank"
-      ><fa-icon [icon]="faGithubAlt"></fa-icon
-    ></a>
-    <div>
-      <h2>Email:</h2>
-      <p>programlikeagirl@gmail.com</p>
+      <p class="blurb" >
+        I have professional experience working with C#, ASP.NET, SQL, and 
+        front-end languages like JavaScript, HTML, CSS, and more. I love 
+        creating clean, maintainable code and collaborating with others to 
+        develop solutions that are both practical and user-focused.
+      </p>
+      <p class="blurb">I'm actively seeking a software engineering position with a 
+        focus on C#, .NET, and backend or full-stack development. If 
+        you have any questions on my experience, or want to connect, 
+        feel free to contact me!
+      </p>
+      <p class="blurb">When I’m not coding, I’m spending time with my dogs and chickens, 
+        tending my garden, or creating items for fundraisers.</p>
     </div>
-  </mat-card> -->
-</div>
+    <div class="skills" id="skills">
+      <h1>SKILLS</h1>
+      <ul>
+        <li matTooltip="C#">
+          <img src="assets/csharp-logo.svg" alt="C#" />
+        </li>
+        <li matTooltip=".NET">
+          <img src="assets/Microsoft_.NET_logo.svg" alt=".NET" />
+        </li>
+        <li matTooltip="SQL">
+          <img src="assets/SQL.png" alt="SQL Databases and Queries" />
+        </li>
+        <li matTooltip="Angular">
+          <img src="assets/angular_gradient.png" alt="Angular" />
+        </li>
+        <li matTooltip="JavaScript">
+          <img src="assets/javascript.webp" alt="JavaScript" />
+        </li>
+
+
+          
+        <div *ngIf="showSection">
+          <li matTooltip="React">
+            <img src="assets/React-icon.png" alt="React" />
+          </li>
+          <li matTooltip="Sass">
+            <img src="assets/Sass_Logo_Color.png" alt="SASS" />
+          </li>
+          <li matTooltip="HTML">
+            <img src="assets/htmlLogo.webp" alt="HTML" />
+          </li>
+          <li matTooltip="CSS">
+            <img src="assets/css-3.svg" alt="CSS" />
+          </li>
+        </div>
+        <button
+          (click)="toggleMore()"
+          id="toggleSkills"
+          aria-label="Show More Skills"
+        >
+          Show More
+        </button>
+      </ul>
+    </div>
+    <!-- <div class="project-section">
+      <h1>PROJECTS</h1>
+      <div class="portfolio" id="portfolio">
+        <mat-card class="project">
+          <mat-card-header>
+            <a href="https://github.com/MacWhitehead/pokemon-api" target="_blank"
+            >Pokémon Pokédex</a>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/pokedex.PNG" alt="">
+          <mat-card-content>
+            <p>
+              This project is a quick Pokédex that allows you to search for a 
+              Pokémon by name or generate a random Pokémon. It was an introduction 
+              to how Angular and React work and utilized vanilla JavaScript, HTML, and 
+              code modules. 
+            </p> 
+          </mat-card-content>
+          </mat-card>
+  
+        <mat-card class="project">
+          <mat-card-header>
+            <a
+            href="https://macwhitehead.github.io/NgGroupProject-Trivia/"
+            target="_blank"
+            >Group Project: Trivia Extraordinaire</a>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/trivia.PNG" alt="">
+          <mat-card-content>
+            <p>This was a group project to cement Angular learning. I was assigned 
+              the project manager role and created the sprint tasks, Trello boards, 
+              and wire frame. I also programmed the user details page, navigation bar, 
+              router guards, and create game page. I also styled 70% of the application.</p>
+          </mat-card-content>
+        </mat-card>
+  
+        <mat-card class="project">
+          <mat-card-header>
+            <a
+            href="https://github.com/MacWhitehead/angular-firebase-golf-app"
+            target="_blank"
+            >Angular Firebase Golf Scorecard</a>
+          </mat-card-header>
+          <img mat-card-image src="../../assets/golf.PNG" alt="">
+          <mat-card-content>
+            <p>For this project, I was tasked with taking a vanilla JavaScript app
+              and changing it into an Angular application.</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    </div>
+        
+    <mat-card class="contact" id="contact">
+      <h1>CONTACT ME</h1>
+      <a href="https://www.linkedin.com/in/mackayla-whitehead/" target="_blank">
+        LinkedIN </a>
+      <a href="https://github.com/MacWhitehead" target="_blank">Github</a>
+      <div>
+        <h2>Email:</h2>
+        <p>programlikeagirl&#64;gmail.com</p>
+      </div>
+    </mat-card> -->
+  </div>

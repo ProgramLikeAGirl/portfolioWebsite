@@ -8,55 +8,29 @@
 }
 
 .intro {
-  position: relative;
+  max-width: 65%;
   text-align: center;
   margin: auto;
   color: black;
-  background: url('../../assets/laptop2.jpg');
-  height: 650px;
   background-size: auto;
   background-position-x: 65%;
   background-position-y: 55%;
   font-family: Garamond, Arial, Helvetica, sans-serif;
-  .intro-text-container {
-    display: flex;
-    color: white;
-    .column-one {
-      padding: 100px 3rem;
-      max-width: 50%;
-      background-color: rgba(0,0,0,0.5);
-      .name {
-        font-size: 40px;
-        line-height: 40px;
-        p::after {
-          z-index: 999;
-        }
-      }
-      .subtitle {
-        font-size: 30px;
-        line-height: 30px;
-      }
-      .blurb {
-        font-size: 25px;
-        line-height: 25px;
-      }
+  .name {
+    font-size: 40px;
+    line-height: 40px;
+    p::after {
+      z-index: 999;
     }
   }
-
-  button {
-    margin: auto;
-    border: none;
-    background-color: #c7f9cc;
-    align-items: left;
-    font-size: 0.5em;
-    font-weight: 600;
+  .subtitle {
+    font-size: 30px;
+    line-height: 30px;
   }
-  button:hover {
-    color: grey;
-    cursor: pointer;
-    text-decoration: underline grey;
+  .blurb {
+    font-size: 25px;
+    line-height: 25px;
   }
-
 }
 
 .skills {
@@ -67,7 +41,7 @@
     text-decoration: underline grey;
   }
   ul {
-      padding: 0;
+    padding: 0;
   }
 
   li {
@@ -75,14 +49,16 @@
     text-align: center;
     font-size: 3.1em;
     text-align: center;
+    height: 50%;
   }
 
   li img {
-    height: 2.5em;
+    height: 2em;
+    margin: 5px;
   }
   #toggleSkills {
     margin: auto;
-    padding: 0; 
+    padding: 0;
     width: 100%;
     border: none;
     background-color: white;
@@ -129,7 +105,7 @@
       font-size: 28px;
       text-decoration: none;
       color: black;
-      line-height:35px;
+      line-height: 35px;
     }
     a:hover {
       color: grey;
@@ -140,7 +116,6 @@
       font-size: 22px;
     }
   }
-  
 }
 
 .contact {
@@ -176,67 +151,64 @@
   }
 }
 
-//mobile
-@media only screen and (max-width: 803px) {
-  .flex-projects {
-    display: block;
-  }
-  .headshot {
-    width: 100%;
-  }
+// //mobile
+// @media only screen and (max-width: 803px) {
+//   .flex-projects {
+//     display: block;
+//   }
 
-  .intro {
-    display: block;
-    .intro-text {
-      width: 100%;
-      text-align: center;
-      margin: auto;
-    }
-  }
+//   .intro {
+//     display: block;
+//     .intro-text {
+//       width: 100%;
+//       text-align: center;
+//       margin: auto;
+//     }
+//   }
 
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    ul {
-      padding: 0px;
-    }
-    img {
-      margin: 0px 5%;
-      width: 40%;
-    }
-    li {
-      margin: 0px;
-    }
-    .full-size {
-      width: 90%;
-    }
-  }
-}
+//   .skills {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-evenly;
+//     ul {
+//       padding: 0px;
+//     }
+//     img {
+//       margin: 0px 5%;
+//       width: 40%;
+//     }
+//     li {
+//       margin: 0px;
+//     }
+//     .full-size {
+//       width: 90%;
+//     }
+//   }
+// }
 
-//desktop
-@media only screen and (min-width: 803px) {
-  .flex-projects {
-    display: flex;
-    flex-direction: row;
-  }
+// //desktop
+// @media only screen and (min-width: 803px) {
+//   .flex-projects {
+//     display: flex;
+//     flex-direction: row;
+//   }
 
-  .intro {
-    display: flex;
-    flex-direction: row;
-    .intro-text {
-      width: 100%;
-      text-align: left;
-      padding-left: 20px;
-    }
-  }
-  .skills {
-    margin: 0px 3em;
-    li img {
-      height: 2.5em;
-    }
-    li {
-      margin: 0px 15px;
-    }
-  }
-}
+//   .intro {
+//     display: flex;
+//     flex-direction: row;
+//     .intro-text {
+//       width: 100%;
+//       text-align: left;
+//       padding-left: 20px;
+//     }
+//   }
+//   .skills {
+//     margin: 0px 3em;
+//     li img {
+//       height: 2em;
+//     }
+//     li {
+//       margin: 0px 15px;
+//     }
+//   }
+// }

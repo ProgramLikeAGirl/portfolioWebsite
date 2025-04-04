@@ -58,6 +58,20 @@ import {
   ɵɵdefineNgModule
 } from "./chunk-LD6T4XAZ.js";
 
+// node_modules/@angular/cdk/fesm2022/element-15999318.mjs
+function coerceNumberProperty(value, fallbackValue = 0) {
+  if (_isNumberValue(value)) {
+    return Number(value);
+  }
+  return arguments.length === 2 ? fallbackValue : 0;
+}
+function _isNumberValue(value) {
+  return !isNaN(parseFloat(value)) && !isNaN(Number(value));
+}
+function coerceElement(elementOrRef) {
+  return elementOrRef instanceof ElementRef ? elementOrRef.nativeElement : elementOrRef;
+}
+
 // node_modules/@angular/cdk/fesm2022/fake-event-detection-84590b88.mjs
 function isFakeMousedownFromScreenReader(event) {
   return event.buttons === 0 || event.detail === 0;
@@ -202,20 +216,6 @@ function supportsPassiveEventListeners() {
 }
 function normalizePassiveListenerOptions(options) {
   return supportsPassiveEventListeners() ? options : !!options.capture;
-}
-
-// node_modules/@angular/cdk/fesm2022/element-15999318.mjs
-function coerceNumberProperty(value, fallbackValue = 0) {
-  if (_isNumberValue(value)) {
-    return Number(value);
-  }
-  return arguments.length === 2 ? fallbackValue : 0;
-}
-function _isNumberValue(value) {
-  return !isNaN(parseFloat(value)) && !isNaN(Number(value));
-}
-function coerceElement(elementOrRef) {
-  return elementOrRef instanceof ElementRef ? elementOrRef.nativeElement : elementOrRef;
 }
 
 // node_modules/@angular/cdk/fesm2022/focus-monitor-28b6c826.mjs
@@ -2874,9 +2874,10 @@ export {
   _bindEventWithOptions,
   Platform,
   normalizePassiveListenerOptions,
+  coerceNumberProperty,
   coerceElement,
   FocusMonitor,
   _CdkPrivateStyleLoader,
   MatCommonModule
 };
-//# sourceMappingURL=chunk-A47RQF4Z.js.map
+//# sourceMappingURL=chunk-QUDSAUIF.js.map

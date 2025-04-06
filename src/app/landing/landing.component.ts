@@ -1,33 +1,33 @@
-import { Component, OnInit } from '@angular/core';
-import { faLinkedin, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing',
+  standalone: true,
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss'],
+  imports: [MatButtonModule, MatCardModule, 
+    MatGridListModule, MatTooltipModule, CommonModule],
+  styleUrls: ['./landing.component.scss'], 
 })
-export class LandingComponent implements OnInit {
-  faLinkedin = faLinkedin;
-  faGithubAlt = faGithubAlt;
-  faEnvelope = faEnvelope;
-
+export class LandingComponent {
   showSection = false;
 
-  constructor() {}
+  constructor() {
+
+  }
 
   ngOnInit(): void {}
 
   toggleMore() {
-   let toggleBtn = document.getElementById('toggleSkills')!
-    if(this.showSection == false) {
-      this.showSection = true
-      toggleBtn.innerHTML = 'Show Less'
-    }
-    else {
-      this.showSection = false
-      toggleBtn.innerHTML = 'Show More'
-    }
-    console.log('Clicked!')
+    this.showSection = !this.showSection;
   }
+
+  getMoreSkills() {
+    return this.showSection ? "Show Less" : "Show More";
+  }
+
 }

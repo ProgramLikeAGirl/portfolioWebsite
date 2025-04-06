@@ -1,35 +1,35 @@
 .mat-toolbar {
-  background-color: #34a0a4;
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000; 
+  z-index: 9999;
   width: 100%;
-  justify-content: end;
   border-bottom: solid 1px grey;
-}
+  background-color: #34a0a4;
+  justify-content: end;
 
-a {
-  text-decoration: none;
-  color: white;
-  margin: 0px 20px;
-}
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+  }
 
-a:hover {
-  color: #d6d2d2;
-  cursor: pointer;
+  a:hover {
+    color: #d6d2d2;
+    cursor: pointer;
+  }
 }
 
 //mobile
 @media only screen and (max-width: 803px) {
-  a {
-    font-size: 0.85em;
+  .mat-toolbar {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
   }
-}
 
-//desktop
-@media only screen and (min-width: 803px) {
   a {
-    font-size: 1.3em;
+    font-size: 0.75em;
   }
 }

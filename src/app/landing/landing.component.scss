@@ -4,91 +4,82 @@
 .main-container {
   text-align: center;
   margin: auto;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Maven Pro", sans-serif;
+  background-color: #f5f5f5;
 }
 
 .intro {
-  position: relative;
-  text-align: center;
+  max-width: 75%;
+  text-align: left;
   margin: auto;
   color: black;
-  background: url('../../assets/laptop2.jpg');
-  height: 650px;
-  background-size: auto;
-  background-position-x: 65%;
-  background-position-y: 55%;
-  font-family: Garamond, Arial, Helvetica, sans-serif;
-  .intro-text-container {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 7em;
+  .flex-intro {
     display: flex;
-    color: white;
-    .column-one {
-      padding: 100px 3rem;
-      max-width: 50%;
-      background-color: rgba(0,0,0,0.5);
-      .name {
-        font-size: 40px;
-        line-height: 40px;
-        p::after {
-          z-index: 999;
-        }
-      }
-      .subtitle {
-        font-size: 30px;
-        line-height: 30px;
-      }
-      .blurb {
-        font-size: 25px;
-        line-height: 25px;
-      }
-    }
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
   }
-
-  button {
+  .name {
+    font-weight: 700;
+    font-size: 2.75em;
+  }
+  img {
+    width: auto;
+    height: 40em;
+  }
+  .blurb {
     margin: auto;
-    border: none;
-    background-color: #c7f9cc;
-    align-items: left;
-    font-size: 0.5em;
-    font-weight: 600;
+    margin: 1em 0;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 2em;
   }
-  button:hover {
-    color: grey;
-    cursor: pointer;
-    text-decoration: underline grey;
-  }
-
 }
 
 .skills {
-  padding: 90px 0;
+  padding: 10em 0;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Jersey 25", sans-serif;
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.5em;
+  }
   h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     text-decoration: underline grey;
   }
-  ul {
-      padding: 0;
+  mat-card {
+    text-align: center;
+    width: 7em;
+    font-size: 1.5em;
+    height: auto;
+    .skillImage {
+      padding: 0.25em;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      width: 70%;
+    }
   }
 
-  li {
-    display: inline;
-    text-align: center;
-    font-size: 3.1em;
-    text-align: center;
-  }
-
-  li img {
-    height: 2.5em;
-  }
   #toggleSkills {
     margin: auto;
-    padding: 0; 
+    padding: 0;
     width: 100%;
     border: none;
-    background-color: white;
     font-size: 1.5em;
     align-items: center;
     font-weight: 600;
+    background-color: #f5f5f5;
   }
   #toggleSkills:hover {
     color: grey;
@@ -98,38 +89,50 @@
 }
 
 .project-section {
+  padding: 8em 0;
+  background-color: #577590;
+  text-align: center;
+  margin: auto;
   h1 {
-    text-align: center;
-    font-size: 40px;
+    font-size: 3.5em;
     color: white;
-    padding: 20px;
+    padding: 1em;
     margin: 0;
-    background-color: #577590;
     text-decoration: underline;
-    padding: 60px 0px;
+    font-family: "Jersey 25", sans-serif;
   }
   .portfolio {
     background-color: #577590;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 4.5em;
     .project {
       flex-direction: column;
-      max-width: 27%;
-      margin: 0px 1.5%;
-      line-height: 30px;
+      width: 30em;
+      margin: 1em;
+      padding: 0.5em;
+    }
+    mat-card {
+      max-height: none;
     }
     mat-card-header {
-      padding: 10px 0px 15px 0px;
-      justify-content: center;
+      padding: 0.5em 0 1.5em 0;
+      font-family: "Jersey 25", sans-serif;
+    }
+    mat-card-image {
+      height: 150px;
+      object-fit: cover;
+    }
+    mat-card-content p {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+      font-family: "Kanit", sans-serif;
     }
     a {
-      font-size: 28px;
-      text-decoration: none;
+      font-size: 2em;
+      text-decoration: underline;
       color: black;
-      line-height:35px;
     }
     a:hover {
       color: grey;
@@ -137,106 +140,55 @@
       text-decoration: underline grey;
     }
     p {
-      font-size: 22px;
+      font-size: 2em;
     }
   }
-  
 }
 
 .contact {
   margin: auto;
   text-align: center;
-  padding: 100px 0px;
+  padding: 4em 0;
+  font-family: "Maven Pro", sans-serif;
   h1 {
+    font-family: "Jersey 25", sans-serif;
     text-align: center;
     font-size: 3em;
     text-decoration: underline grey;
   }
-  a {
-    margin: 0px 7px;
-    text-decoration: none;
-    color: black;
+  .contact-blurb {
+    max-width: 45%;
+    padding: 1em 0 1.5em 0;
+    margin: auto;
+    font-size: 1.4em;
   }
-
-  a:hover,
-  fa-icon:hover {
-    color: grey;
-    cursor: pointer;
-  }
-
-  fa-icon {
-    font-size: 60px;
-    margin: 0px 5px;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  p {
-    font-size: 1.5em;
+  .socials {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    a {
+      margin: 0px 7px;
+      text-decoration: none;
+      color: black;
+    }
+    a img {
+      height: 5em;
+      transition: transform 0.2s;
+    }
+    a:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
-//mobile
+// //mobile
 @media only screen and (max-width: 803px) {
-  .flex-projects {
-    display: block;
-  }
-  .headshot {
-    width: 100%;
-  }
-
-  .intro {
-    display: block;
-    .intro-text {
-      width: 100%;
-      text-align: center;
-      margin: auto;
-    }
-  }
-
-  .skills {
-    display: flex;
+  .flex-intro {
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    ul {
-      padding: 0px;
-    }
-    img {
-      margin: 0px 5%;
-      width: 40%;
-    }
-    li {
-      margin: 0px;
-    }
-    .full-size {
-      width: 90%;
-    }
   }
-}
-
-//desktop
-@media only screen and (min-width: 803px) {
-  .flex-projects {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .intro {
-    display: flex;
-    flex-direction: row;
-    .intro-text {
-      width: 100%;
-      text-align: left;
-      padding-left: 20px;
-    }
-  }
-  .skills {
-    margin: 0px 3em;
-    li img {
-      height: 2.5em;
-    }
-    li {
-      margin: 0px 15px;
-    }
+  .intro img {
+    max-width: 100%;
+    height: auto;
   }
 }

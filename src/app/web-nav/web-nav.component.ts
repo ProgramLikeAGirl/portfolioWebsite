@@ -1,11 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
-  selector: 'app-web-nav',
-  templateUrl: './web-nav.component.html',
-  styleUrls: ['./web-nav.component.scss'],
+    selector: 'app-web-nav',
+    standalone: true,
+    templateUrl: './web-nav.component.html',
+    imports: [MatButtonModule, MatCardModule, 
+      MatGridListModule, MatToolbarModule],
+    styleUrls: ['./web-nav.component.scss'],
 })
-export class WebNavComponent implements OnInit {
+export class WebNavComponent {
   constructor() {}
 
   ngOnInit(): void {}

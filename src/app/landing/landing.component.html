@@ -1,7 +1,12 @@
 <div class="main-container">
-    <div class="intro" id="intro">
-      <mat-grid-list cols="2" gutterSize="1.5em" rowHeight="1.5:1">
-        <mat-grid-tile>
+    <div class="intro" id="aboutMe">
+      <div cols="2" class="flex-intro">
+        <div>
+          <div>
+            <img class="headshot" src="assets/Headshot.jpg" alt="Headshot">
+          </div>
+        </div>
+        <div>
           <div>
             <p class="name">Hello! My name is MacKayla Curtis.</p>
             <p class="blurb" >
@@ -10,10 +15,6 @@
               creating clean, maintainable code and collaborating with others to 
               develop solutions that are both practical and user-focused.
             </p>
-          </div>
-        </mat-grid-tile>
-        <mat-grid-tile>
-          <div>
             <p class="blurb">I'm actively seeking a software engineering position with a 
               focus on C#, .NET, and backend or full-stack development. If 
               you have any questions on my experience, or want to connect, 
@@ -22,8 +23,8 @@
             <p class="blurb">When I’m not coding, I’m spending time with my dogs and chickens, 
               tending my garden, or creating items for fundraisers.</p>
           </div>
-        </mat-grid-tile>
-      </mat-grid-list>
+        </div>
+      </div>
     </div>
 
 
@@ -91,13 +92,13 @@
       </div>
     
       <button (click)="toggleMore()" id="toggleSkills" aria-label="Show More Skills">
-        {{ showSection ? 'Show Less' : 'Show More' }}
+        {{getMoreSkills()}}
       </button>
     </div>
     
-    <div class="project-section">
+    <div class="project-section" id="projects">
       <h1>PROJECTS</h1>
-      <div class="portfolio" id="portfolio">
+      <div class="portfolio">
         <mat-card class="project">
           <mat-card-header>
             <a href="https://github.com/ProgramLikeAGirl/pokemon-api" target="_blank"
@@ -148,6 +149,9 @@
         
     <mat-card class="contact" id="contact">
       <h1>CONTACT ME</h1>
+      <p class="contact-blurb">Interested in viewing my most recent resume, discussing job 
+        opportunities, or simply connecting? Feel free to reach out below!
+      </p>
       <div class="socials">
         <a href="https://www.linkedin.com/in/mackayla-curtis/" target="_blank">
           <img mat-card-image matTooltip="Connect on LinkedIn" src="assets/InBug-Black.png" alt="LinkedIn"> 

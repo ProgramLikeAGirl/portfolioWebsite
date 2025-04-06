@@ -23,16 +23,11 @@ export class LandingComponent {
   ngOnInit(): void {}
 
   toggleMore() {
-   let toggleBtn = document.getElementById('toggleSkills')!
-    if(this.showSection == false) {
-      this.showSection = true
-      toggleBtn.innerHTML = 'Show Less'
-    }
-    else {
-      this.showSection = false
-      toggleBtn.innerHTML = 'Show More'
-    }
-    console.log('Clicked!')
+    this.showSection = !this.showSection;
+  }
+
+  getMoreSkills() {
+    return this.showSection ? "Show Less" : "Show More";
   }
 
 }
